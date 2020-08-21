@@ -1,7 +1,7 @@
 {
     "name": "aiida-unicore",
     "author": "FZJ-JSC",
-    "author_email": "c.witzleræfz-juelich.de",
+    "author_email": "c.witzler@fz-juelich.de",
     "description": "Aiida plugin that allows to schedule jobs and transport files using unicore",
     "url": "https://github.com/FZJ-JSC/aiida-unicore",
     "license": "MIT",
@@ -14,14 +14,11 @@
     ],
     "version": "0.1.0a0",
     "entry_points": {
-        "aiida.data": [
-            "unicore = aiida_unicore.data:DiffParameters"
+        "aiida.transports": [
+            "unicore = aiida_unicore.transports:UnicoreTransport"
         ],
         "aiida.schedulers": [
             "unicore = aiida_unicore.schedulers:Unicore"
-        ],
-        "aiida.parsers": [
-            "unicore = aiida_unicore.parsers:DiffParser"
         ],
         "aiida.cmdline.data": [
             "unicore = aiida_unicore.cli:data_cli"
