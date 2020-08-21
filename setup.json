@@ -17,8 +17,8 @@
         "aiida.data": [
             "unicore = aiida_unicore.data:DiffParameters"
         ],
-        "aiida.calculations": [
-            "unicore = aiida_unicore.calculations:DiffCalculation"
+        "aiida.schedulers": [
+            "unicore = aiida_unicore.schedulers:Unicore"
         ],
         "aiida.parsers": [
             "unicore = aiida_unicore.parsers:DiffParser"
