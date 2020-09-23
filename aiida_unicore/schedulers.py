@@ -138,16 +138,12 @@ class UnicoreScheduler(Scheduler):
     }
 
     _detailed_job_info_fields = [
-        'AllocCPUS', 'Account', 'AssocID', 'AveCPU', 'AvePages', 'AveRSS', 'AveVMSize', 'Cluster', 'Comment', 'CPUTime',
-        'CPUTimeRAW', 'DerivedExitCode', 'Elapsed', 'Eligible', 'End', 'ExitCode', 'GID', 'Group', 'JobID', 'JobName',
-        'MaxRSS', 'MaxRSSNode', 'MaxRSSTask', 'MaxVMSize', 'MaxVMSizeNode', 'MaxVMSizeTask', 'MinCPU', 'MinCPUNode',
-        'MinCPUTask', 'NCPUS', 'NNodes', 'NodeList', 'NTasks', 'Priority', 'Partition', 'QOSRAW', 'ReqCPUS', 'Reserved',
-        'ResvCPU', 'ResvCPURAW', 'Start', 'State', 'Submit', 'Suspended', 'SystemCPU', 'Timelimit', 'TotalCPU', 'UID',
-        'User', 'UserCPU'
+        'uuidcode', 'baseURL', 'authToken', 'username' , 'project', 'partition',
+        'reservation', 'NNodes' 
     ]
 
     # The class to be used for the job resource.
-    _job_resource_class = SlurmJobResource
+    _job_resource_class = UnicoreJobResource
 
     # Fields to query or to parse
     # Unavailable fields: substate, cputime
